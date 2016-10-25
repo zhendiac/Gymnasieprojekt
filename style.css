@@ -1,19 +1,22 @@
 body {
+	overflow-y: hidden;
 	background-image: url(img/bg.jpg);
+	background-attachment: fixed;
 	background-size: cover;
 	font-family: "Ubuntu", sans-serif;
 }
 
 .box1{
+		display:block;
 		height: 35px;
-		width: 120px;
+		width: 160px;
 		background-color: #42f4ce;
 		color:black;
 		text-align: center;
 		font-weight: bold;
 		border-radius: 4px;
-		margin-top: 120px;
-		margin-left: 600px;
+		margin-top: 5%;
+		margin-left:calc(50% - 85px);
 		font-size: 25px;
 		padding: 5px;
 }
@@ -26,20 +29,24 @@ body {
 		font-weight: bold;
 		border-radius: 4px;
 		float: left;
-		margin-left: 200px;
+		margin-left:calc(25% - 85px);
 		font-size: 25px;
 		padding:5px;
 }
 .box3{
 		height: 35px;
-		width: 120px;
+		width: 160px;
 		background-color: #42f4ce;
 		color:black;
 		text-align: center;
 		font-weight: bold;
 		border-radius: 4px;
 		float: right;
-		margin-right: 200px;
+		margin-right:calc(25% - 85px);
 		font-size: 25px;
 		padding:5px;
+}
+a:link{
+		color: none; 
+		text-decoration: none
 }
