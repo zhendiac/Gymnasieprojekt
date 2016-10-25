@@ -19,7 +19,7 @@ body {
 
 .box1{
 		height: 35px;
-		width: 130px;
+		width: 120px;
 		background-color: #42f4ce;
 		color:black;
 		text-align: center;
