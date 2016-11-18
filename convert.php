@@ -15,31 +15,27 @@
 
 <?php
 
-$money = $_POST['startnmbr'];
-$year = $_POST['year'];
+if(isset($_POST['startnmbr'])) {
+	$money = $_POST['startnmbr'];}
 
-if ($year < 999) {
-	$multiplier =2.5;
+if(isset($_POST['year'])) {
+	$year = $_POST['year'];
+
+	if($year < 999) {
+		$multiplier =2.5;
+	}
+		elseif ($year < 1499) {
+			$multiplier = 2;
+		}
+		elseif ($year < 2000) {
+			$multiplier = 1.5;
+	}
 }
-	elseif ($year < 1499) {
-		$multiplier = 2;
-	}
-	elseif ($year < 2000) {
-		$multiplier = 1.5;
-	}
-
 if(isset($_POST['calc'])) {
 	$sum = $money*$multiplier;
 
 	echo "År ",$year, " så var ", $money, " ungefär samma som ", $sum, " är idag.";
 }
-
-
-
-
-
-
-
 
 ?>
 
