@@ -6,59 +6,31 @@ body {
 	font-family: "Ubuntu", sans-serif;
 }
 
-.box1{
-		display:block;
+.flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 100vh;
+}
+.flex2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.box{
 		height: 35px;
 		width: 160px;
 		background-color: #42f4ce;
-		color:black;
-		text-align: center;
+		color: black;
 		font-weight: bold;
 		border-radius: 4px;
-		margin-top: 5%;
-		margin-left:calc(50% - 85px);
 		font-size: 25px;
 		padding: 5px;
-}
-.box2{
-		height: 35px;
-		width: 160px;
-		background-color: #42f4ce;
-		color:black;
+		margin: auto;
 		text-align: center;
-		font-weight: bold;
-		border-radius: 4px;
-		float: left;
-		margin-left:calc(25% - 85px);
-		font-size: 25px;
-		padding:5px;
 }
-.box3{
-		height: 35px;
-		width: 160px;
-		background-color: #42f4ce;
-		color:black;
-		text-align: center;
-		font-weight: bold;
-		border-radius: 4px;
-		float: right;
-		margin-right:calc(25% - 85px);
-		font-size: 25px;
-		padding:5px;
-}
-.box4{
-		height: 35px;
-		width: 160px;
-		background-color: #42f4ce;
-		color:black;
-		text-align: center;
-		font-weight: bold;
-		border-radius: 4px;
-		margin-top: 50%;
-		margin-left:calc(50% - 85px);
-		font-size: 25px;
-		padding: 5px;
-}
+
 a:link{
 		color: none; 
 		text-decoration: none
