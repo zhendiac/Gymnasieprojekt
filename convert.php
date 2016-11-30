@@ -8,8 +8,8 @@
 <body>
 
 <form action="convert.php" method="post">
-<input type="text" name="startnmbr" placeholder="Amount of money">
-<input type="text" name="year" maxlength="4" placeholder="Year">	
+<input type="number" name="startnmbr" placeholder="Amount of money" required>
+<input type="number" name="year" maxlength="4" placeholder="Year" required>	
 <input type="submit" name="calc">
 </form>
 
@@ -34,7 +34,7 @@ if(isset($_POST['year'])) {
 if(isset($_POST['calc'])) {
 	$sum = $money*$multiplier;
 
-	echo "År ",$year, " så var ", $money, " ungefär samma som ", $sum, " är idag.";
+	echo "År ",$year, " så var ", $money, " ungefär samma som ", $sum, " är idag. Alltså ",  $multiplier ," gånger mer.";
 }
 
 ?>
